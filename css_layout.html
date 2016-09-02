@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Css Styling</title>
+  </head>
+  <body>
+    <h1>CSS STYLES</h1>
+
+<h2>Techinique #1 Float</h2>
+<ul>
+  <li>Red</li>
+  <li>Green</li>
+  <li>Blue</li>
+</ul>
+
+
+<h2>#2 Table</h2>
+<table>
+  <tr>
+    <td>One</td>
+    <td>Two</td>
+    <td>Three</td>
+  </tr>
+</table>
+
+<h2>#3 FlexBox 1/3 - 2/3</h2>
+<main>
+  <section class="third">Column1</section>
+  <section>Column2</section>
+  <section>Column3</section>
+</main>
+
+<h2>Normal FlexBox</h2>
+<main>
+  <section>Column1</section>
+  <section>Column2</section>
+  <section>Column3</section>
+</main>
+
+<h2>Flexbox Sidebar</h2>
+<header>
+  <article>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </article>
+  <div class="sidebar">
+    Sidebar
+  </div>
+</header>
+
+  </body>
+</html>
+
+<style media="screen">
+header {
+  display: flex;
+}
+.sidebar {
+  flex: 1;
+}
+article {
+  flex: 1;
+}
+body {
+  margin: 0px;
+}
+
+main {
+  display: flex;
+}
+
+section {
+  padding: 10px;
+  background: green;
+  flex: 1;
+  text-align: center;
+}
+.third {
+  flex: 2;
+}
+
+  ul {
+    overflow: hidden;
+    margin: 0px;
+  }
+  li {
+    border: 1px solid blue;
+    margin: 0px;
+    padding: 20px;
+    float: left;
+    display: inline;
+  }
+
+  td {
+    background: blue;
+    padding: 20px;
+  }
+
+</style>

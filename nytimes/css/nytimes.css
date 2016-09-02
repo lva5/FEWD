@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+p {
+  margin: 0px;
+}
+
+header {
+  width: 100%;
+}
+.ski {
+  width: 100%;
+}
+.logo {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+main {
+  width: 100%;
+}
+
+.allheads {
+  display: flex;
+}
+.headline {
+  flex: 1;
+  margin: 10px;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.articles {
+  display: flex;
+  font-weight: 500;
+  margin: 0px;
+}
+section {
+  flex: 1;
+  margin: 20px;
+}

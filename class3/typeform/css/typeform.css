@@ -1,0 +1,43 @@
+body {
+  margin: 0px;
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header {
+  display: flex;
+}
+.header_text {
+  flex: 2;
+  font-size: 20px;
+  color: #73bec8;
+  font-weight: bold;
+  /*line-spacing: */
+}
+.header_logo {
+  flex: 7;
+}
+.header_menu {
+  flex: 1;
+}
+h1 {
+  text-align: center;
+}
+
+.blue_box {
+  background: blue;
+  color: white;
+}
+
+.yellow_box {
+  background: yellow;
+  color: white;
+}
+
+.icon_row {
+  display: flex;
+}
+.icon_column {
+  flex: 1;
+}
