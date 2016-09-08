@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Acme Corp | Sign Up</title>
+    <link rel="stylesheet" href="css/acme.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <header>
+      <a href="acme.html"><img class="logo" src="img/acme-corp.jpg"></a>
+      <nav>
+        <ul>
+          <li><a href="product.html">Products</a></li>
+          <li><button type="button" name="Sign Up" class="Sign_Up"><a href="signup.html">Sign Up</a></button></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="sign_title">Sign Up</h1>
+      <form class="signup" action="index.html" method="post">
+        <fieldset>
+          <div class="sign1">
+            <label for="first" class="label1">First Name</label>
+            <input type="text" name="first" value="" placeholder="John">
+          </div>
+          <div class="sign1">
+            <label for="last" class="label1">Last Name</label>
+            <input type="text" name="last" value="" placeholder="Doe">
+          </div>
+          <div class="sign1">
+            <label for="email" class="label1">Email</label>
+            <input type="text" name="email" value="" placeholder="john.doe@example.com">
+          </div>
+          <div class="sign1">
+            <label for="password" class="label1">Password</label>
+            <input type="text" name="password" value="">
+          </div>
+          <div class="sign2">
+            <label for="hear" class="label2">How did you hear about us?</label>
+            <select name="select" class="select1">
+              <option value="value1"></option>
+              <option value="value2">Friend</option>
+              <option value="value3">Search</option>
+              <option value="value3">Other</option>
+            </select>
+            <input type="checkbox" name="check" value="">
+            <label for="hear" class="label2">Agree to our terms of service</label>
+          </div>
+        </fieldset>
+      </form>
+      <div class="submit_form">
+        <button type="button" name="Sign Up" class="Sign_Up">Sign Up</button>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright, 2015</p>
+    </footer>
+  </body>
+</html>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
+<html>
 <head>
-  <title>Acme Corp</title>
+  <title>Acme Corp | Home</title>
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"> -->
   <link rel="stylesheet" href="css/acme.css">
   <meta charset="utf-8">
@@ -8,18 +9,19 @@
 
 <body>
   <header>
-    <img src="img/acme-corp.jpg">
+    <a href="acme.html"><img class="logo" src="img/acme-corp.jpg"></a>
     <nav>
       <ul>
-        <li>Products</li>
-        <li><button type="button" name="Sign Up">Sign Up</button></li>
+        <li><a href="product.html">Products</a></li>
+        <li><button type="button" name="Sign Up" class="Sign_Up"><a href="signup.html">Sign Up</a></button></li>
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="home">
     <h1>Welcome to ACME Corp!</h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
     <p>
       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
@@ -29,3 +31,4 @@
   </footer>
   <script src="js/acme.js"></script>
 </body>
+</html>
