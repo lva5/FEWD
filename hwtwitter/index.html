@@ -21,7 +21,7 @@
 
       <div class="first_row">
         <div class="c1">
-          <img src="img/1.jpg" alt="Face1" width=65px height=65px class="first_emo"/>
+          <img src="img/1.jpg" alt="Face1" class="first_emo"/>
         </div>
 
         <div class="c2">
@@ -35,7 +35,7 @@
 
       <hr>
       <div class="row">
-        <img src="img/2.jpg" alt="Face2" width=65px height=65px class="emo" />
+        <img src="img/2.jpg" alt="Face2" class="emo" />
         <div class="column_text">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <p class="like">Like</p>
@@ -44,7 +44,7 @@
       </div>
       <hr>
       <div class="row">
-        <img src="img/3.jpg" alt="Face3" width=65px height=65px class="emo" />
+        <img src="img/3.jpg" alt="Face3" class="emo" />
         <div class="column_text">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <p class="like">Like</p>
@@ -52,14 +52,15 @@
         </div>
       </div>
       <hr>
-      <div class="row">
-        <img src="img/4.jpg" alt="Face4" width=65px height=65px class="emo" />
+      <div class="row" class="last">
+        <img src="img/4.jpg" alt="Face4" class="emo" />
         <div class="column_text">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <p class="like">Like</p>
           <p class="count">(12)</p>
         </div>
       </div>
+      <hr>
     </main>
     <footer>
       <ul>
@@ -72,4 +73,45 @@
       </ul>
     </footer>
   </body>
+
+
+<script type="text/javascript">
+// var hr = document.createElement("hr");
+// var lasttweet = document.querySelector(".last");
+// lasttweet.appendChild(hr);
+
+var row = document.createElement("div");
+row.classList.add("row");
+
+var emoticon = document.createElement("img");
+emoticon.setAttribute("src","img/1.jpg");
+emoticon.classList.add("emo");
+
+var column_text = document.createElement("div");
+emoticon.classList.add("column_text");
+
+var tweet = document.createElement("p");
+tweet.textContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+tweet.classList.add("column_text");
+
+var like = document.createElement("p");
+like.textContent = "Like ";
+like.classList.add("like");
+
+var count = document.createElement("p");
+count.textContent = "(12)";
+count.classList.add("count");
+
+var main = document.querySelector("main");
+main.appendChild(row);
+row.appendChild(emoticon);
+row.appendChild(column_text);
+column_text.appendChild(tweet);
+column_text.appendChild(like);
+column_text.appendChild(count);
+
+</script>
+
+
+
 </html>
