@@ -1,56 +1,134 @@
 <!DOCTYPE html>
-<style>
-  header {
-    color: black;
-    padding: 10px;
-    }
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Twitter</title>
+    <link rel="stylesheet" href="css/master.css" media="screen" title="no title">
+  </head>
+  <body>
+    <header>
+      <p class="logo">
+        Twitter
+      </p>
+      <nav>
+        <ul>
+          <li><button class="nav_but" type="button" name="Login">Log In</button></li>
+          <li><button class="nav_but" type="button" name="SignUp">Sign Up</button></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
 
-  h1 {
-    text-align: center;
-  }
+      <div class="first_row">
+        <div class="c1">
+          <img src="img/1.jpg" alt="Face1" class="first_emo"/>
+        </div>
+        <div class="c2">
+          <section class="text_box">
+            <textarea id="tweetbox" placeholder="Leave a comment..." class="text_box"></textarea>
+            <p class="character">140</p>
+         </section>
+         <button type="button" name="tweet" class="tweet_btn">Tweet</button>
+        </div>
+      </div>
 
-  img {
-    border-radius: 80px;
-    img-align: center;
-  }
+      <div class="row">
+        <img src="img/2.jpg" alt="Face2" class="emo" />
+        <div class="column_text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="like">Like</p>
+          <p class="count">(12)</p>
+        </div>
+      </div>
 
-  main {
+      <div class="row">
+        <img src="img/3.jpg" alt="Face3" class="emo" />
+        <div class="column_text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="like">Like</p>
+          <p class="count">(12)</p>
+        </div>
+      </div>
 
-    font-size: 20px;
-    font-family: helvetica;
-    padding: 10px;
-    max-width: 600px;
-    border-radius: 40px;
-  }
-  footer {
-    text-align: center;
-    margin: 40px;
-  }
-</style>
+      <div class="row" class="last">
+        <img src="img/4.jpg" alt="Face4" class="emo" />
+        <div class="column_text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="like">Like</p>
+          <p class="count">(12)</p>
+        </div>
+      </div>
 
-<header>
-  <img src="images/BW.jpg" alt="Bridge" width="200" height="200"/>
-  <h1>
-    Lucas' Page
-  </h1>
-</header>
+    </main>
+    <footer>
+      <ul>
+        <li>About Us</li>
+        <li>Careers</li>
+        <li>Press</li>
+        <li>Terms of Service</li>
+        <li>Privacy Policy</li>
+        <li>Contact Us</li>
+      </ul>
+    </footer>
+  </body>
 
-<main>
-  <p>
-    I just moved to SF and this is my first step in taking over this city.
-  </p>
-  <p>
-    These things are pretty chill:
-  </p>
-  <ul>
-    <li><a href="https://www.thrillist.com/eat/san-francisco/best-sf-fries-thrillist-san-francisco" target="_blank" title="Click me!">Fries</a></li>
-    <li><a href="https://www.netflix.com/" >TV Shows</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Dog">Dogs</a></li>
-  </ul>
-</main>
 
-<footer>
-  <p>
-    My Website's Feet
-  </p>
-</footer>
+<script type="text/javascript">
+
+//EVENT LISTENER
+var submit = document.querySelector(".tweet_btn");
+submit.addEventListener("click", newtweet);
+
+
+var textbox = document.querySelector("#tweetbox");
+textbox.addEventListener('keydown', characters);
+
+function characters(event) {
+  var newtext = document.querySelector("#tweetbox").value;
+  var remaining = 140 - newtext.length;
+  document.querySelector(".character").textContent = remaining;
+}
+
+function newtweet(event) {
+event.preventDefault();
+var newtext = document.querySelector("#tweetbox").value;
+
+var row = document.createElement("div");
+row.classList.add("row");
+
+var emoticon = document.createElement("img");
+emoticon.setAttribute("src","img/1.jpg");
+emoticon.classList.add("emo");
+
+var column_text = document.createElement("div");
+emoticon.classList.add("column_text");
+
+var tweet = document.createElement("p");
+tweet.textContent = newtext;
+tweet.classList.add("column_text");
+
+var like = document.createElement("p");
+like.textContent = "Like ";
+like.classList.add("like");
+
+var count = document.createElement("p");
+count.textContent = "(0)";
+count.classList.add("count");
+
+var main = document.querySelector("main");
+main.appendChild(row);
+row.appendChild(emoticon);
+row.appendChild(column_text);
+column_text.appendChild(tweet);
+column_text.appendChild(like);
+column_text.appendChild(count);
+
+document.querySelector("#tweetbox").value = "";
+document.querySelector(".character").textContent = "140";
+}
+
+</script>
+
+
+
+</html>
