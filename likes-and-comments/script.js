@@ -52,4 +52,3 @@ function comment(event) {
   commentlist.appendChild(newcomment);
   document.querySelector("#new-comment-body").value = "";
 }
-
