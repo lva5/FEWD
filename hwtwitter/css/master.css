@@ -99,17 +99,9 @@ footer li {
   height: 90px;
   width: 100%;
   margin-top: 20px;
+	border-bottom: 1px solid black;
 }
-hr {
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
-    color: #E6E6E6;
-}
+
 .column_text {
   font-size: 20px;
 }
@@ -128,8 +120,9 @@ hr {
 .first_row {
   height: 90px;
   width: 100%;
-  margin: 20px 0 20px 0;
+  margin: 20px 0 20px;
   display: flex;
+	/*border-bottom: 1px solid black;*/
 }
 .c1 {
   flex: 1;
@@ -167,4 +160,7 @@ hr {
   border-radius: 5px;
   box-shadow:inset 0px 0px 1px 0px black;
   margin: 10px 0 10px 0;
+}
+#tweetbox {
+	font-size: 18px;
 }

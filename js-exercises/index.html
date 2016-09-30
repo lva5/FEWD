@@ -160,7 +160,8 @@
     <script>
     document.title = document.querySelector(".document-title").value
     document.querySelector(".full-name").value = document.querySelector(".first-name").value + " " + document.querySelector(".last-name").value
-    // document.querySelector(".b1").value = parseInt(document.querySelector(".b0").value)*parseInt(document.querySelector(".a1").value)
+    document.querySelector(".b1").value = parseInt(document.querySelector(".b0").value)*parseInt(document.querySelector(".a1").value)
+
     for (i = 0; i < 5; i++) {
     document.querySelector(".b"+(i+1)).value = parseInt(document.querySelector(".b0").value)*parseInt(document.querySelector(".a"+(i+1)).value);
     document.querySelector(".c"+(i+1)).value = parseInt(document.querySelector(".c0").value)*parseInt(document.querySelector(".a"+(i+1)).value);
@@ -168,6 +169,25 @@
     document.querySelector(".e"+(i+1)).value = parseInt(document.querySelector(".e0").value)*parseInt(document.querySelector(".a"+(i+1)).value);
     document.querySelector(".f"+(i+1)).value = parseInt(document.querySelector(".f0").value)*parseInt(document.querySelector(".a"+(i+1)).value);
     }
+
+// Or:
+//     function multiply(row,column,output) {
+//     document.querySelector(output).value = parseInt(document.querySelector(row).value)*parseInt(document.querySelector(column).value);
+//     };
+//
+//     function multiplyrow(n) {
+//       multiply(".a1","."+n+"0","."+n+"1");
+//       multiply(".a2","."+n+"0","."+n+"2");
+//       multiply(".a3","."+n+"0","."+n+"3");
+//       multiply(".a4","."+n+"0","."+n+"4");
+//       multiply(".a5","."+n+"0","."+n+"5");
+//     }
+//
+// multiplyrow("b");
+// multiplyrow("c");
+// multiplyrow("d");
+// multiplyrow("e");
+// multiplyrow("f");
 
     </script>
   </body>
