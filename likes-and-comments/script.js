@@ -25,7 +25,7 @@ function comment(event) {
   commentlist.appendChild(newcomment);
   document.querySelector("#new-comment-body").value = "";
 }
-=======
+
 var like = document.querySelector(".like-link");
 
 //fnc to up the like count
