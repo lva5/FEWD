@@ -1,0 +1,75 @@
+
+
+body {
+  width: 80%;
+  max-width: 600px;
+  background-color: #F2F1F5;
+  margin: 2em auto;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+  padding: 2em 3em;
+  max-width: 600px;
+}
+header {
+  display: flex;
+  font-size: 25px;
+}
+
+.header1 {
+  flex: 7;
+  font-weight: 700;
+}
+.header2 {
+  flex: 3;
+  text-align: center;
+}
+
+form {
+  display: flex;
+}
+
+#newtodo {
+  flex: 7;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+#submit {
+  flex: 3;
+}
+
+button {
+  width: 80%;
+  margin-left: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom-width: 2px;
+  border-radius: 5px; font-size: inherit;
+  color: white;
+  background-color: #049cd8;
+  padding: .5em 1em;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  font-size: 20px;
+  padding: 0px;
+}
+input:checked + span {
+  opacity: 0.2;
+  text-decoration: line-through;
+}
+
+li {
+  font-size: 25px;
+  margin: 2px;
+}
+
+.nothing {
+  text-align: center;
+  font-size: 25px;
+  margin: 2em;
+}
+
+.hidden {
+  display: none;
+}
