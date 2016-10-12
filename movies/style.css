@@ -1,0 +1,35 @@
+* {box-sizing: border-box}
+
+body {
+  background-color: #3A3A3A;
+  color: white;
+  display: flex;
+}
+
+.movies {
+flex: 1;
+}
+
+.description {
+  flex: 1;
+  margin-top: 110px;
+}
+
+.d2 {
+  display: flex;
+}
+
+.left {
+  flex: 1;
+  font-weight: 700;
+}
+
+.right {
+  flex: 8;
+}
+
+.moviepic {
+  width: 150px;
+  height: 200px;
+  margin: 10px;
+}
