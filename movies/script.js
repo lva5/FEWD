@@ -6,7 +6,7 @@ for (var i = 0; i < movies.length; i++) {
 function showInfo(event) {
   event.preventDefault();
   var movieid = event.target.getAttribute("id");
-  $.get("http://omdbapi.com/?i="+movieid, displayResults);
+  $.get("https://omdbapi.com/?i="+movieid, displayResults);
 };
 
 function displayResults(results) {
