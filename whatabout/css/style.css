@@ -310,6 +310,7 @@ main {
 
 .percentage {
 	display: none;
+	font-size: 25px;
 }
 
 .usericon {
