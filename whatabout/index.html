@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>What About...</title>
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="topleft headerplus">
+        <img src="img/plus.png" alt="+" id="add" onclick="addGroup();"/>
+      </div>
+        <div class="title topmid">
+          <h1 id="title" class="font white">What About...</h1>
+        </div>
+        <div class="topright cog">
+          <img src="img/cog.png" alt="username" class="user" onclick="showOptions();"/>
+        </div>
+    </header>
+    <main>
+      <div class="left grouplist core">
+        <p class="font white grouptitle">Groups</p>
+        <button class="font white group example chosen" groupid="1">Startup Name Ideas</button>
+        <button class="font white group example" groupid="2">Best Answer</button>
+        <button class="font white group example" groupid="3">Party Theme?</button>
+      </div>
+
+
+
+      <div class="mid mainpage core">
+
+          <div class="firstloginbox">
+            <h2 class="font loginprompt">Let's Get Started!</h2>
+            <form class="firstloginform font" action="index.html" method="post">
+              <label for="" id="name">Your Name:</label>
+              <input id="input" type="textarea" name="name" value="">
+              <button type="button" name="button" class="login_button font">Log In</button>
+            </form>
+          </div>
+
+          <div class="addgroupbox">
+            <form class="addgroupform" action="index.html" method="post">
+              <label for="" id="groupname">Group Name:</label>
+              <input type="textarea" name="name" value="">
+              <label for="" id="prompt">Prompt (optional):</label>
+              <input type="textarea" name="name" value="" placeholder="Here you can add a description of what you're brainstorming.">
+              <label for="" id="groupsize">How big is your gruoup?</label>
+              <input type="textarea" name="name" value="">
+              <button type="button" name="button" class="font" id="submitgroup">Submit</button>
+            </form>
+          </div>
+
+            <div class="insidegroup" groupid="1" members="10">
+              <ul class="commentul">
+                <li class="commentli" commentid="1" yes="0" no="0">
+                  <div class="c_user"> <img src="img/1.jpg" alt="1" class="usericon"/>  </div>
+                  <div class="c_text"><p class="font2">How about Brainstormely?</p></div>
+                  <div class="c_vote">
+                    <img src="img/check.png" alt="[YES]" class="iconvote" />
+                    <img src="img/x.png" alt="[NO]" class="iconvote" />
+                    <p class="percentage font" commentid="1">87%</p>
+                   </div>
+                </li>
+                <li class="commentli" commentid="2">
+                  <div class="c_user"> <img src="img/2.jpg" alt="1" class="usericon"/>  </div>
+                  <div class="c_text"><p class="font2">Suggestionsly?</p></div>
+                  <div class="c_vote">
+                    <img src="img/check.png" alt="[YES]" class="iconvote "/>
+                    <img src="img/x.png" alt="[NO]" class="iconvote"/>
+                   </div>
+                </li>
+                <li class="commentli" commentid="3">
+                  <div class="c_user"> <img src="img/3.jpg" alt="1" class="usericon"/>  </div>
+                  <div class="c_text"><p class="font2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo ca</p></div>
+                  <div class="c_vote">
+                    <img src="img/check.png" alt="[YES]" class="iconvote "/>
+                    <img src="img/x.png" alt="[NO]" class="iconvote"/>
+                   </div>
+                </li>
+                <li class="commentli" commentid="4">
+                  <div class="c_user"> <img src="img/4.jpg" alt="1" class="usericon"/>  </div>
+                  <div class="c_text"><p class="font2">Greg's List</p></div>
+                  <div class="c_vote">
+                    <img src="img/check.png" alt="[YES]" class="iconvote "/>
+                    <img src="img/x.png" alt="[NO]" class="iconvote"/>
+                   </div>
+                </li>
+              </ul>
+              <div class="outercomment">
+                <div class="commentarea">
+                  <input type="textarea" name="name" value="" class="font2" id="newcomment" placeholder="What about...">
+                  <button type="button" name="button" id="enter_btn"><img src="img/arrow.png" alt="[ENTER]" id="enter"/></button>
+                </div>
+            </div>
+
+            </div>
+
+      </div>
+
+      <div class="right core members">
+        <p class="font grouptitle">Members</p>
+        <div class="currentmembers">
+        <img src="img/4.jpg" alt="1" class="membericon"/>
+        <img src="img/3.jpg" alt="1" class="membericon"/>
+        <img src="img/2.jpg" alt="1" class="membericon"/>
+        <img src="img/1.jpg" alt="1" class="membericon"/>
+        <img src="img/3.jpg" alt="1" class="membericon"/>
+        <img src="img/4.jpg" alt="1" class="membericon"/>
+        <img src="img/4.jpg" alt="1" class="membericon"/>
+        <img src="img/3.jpg" alt="1" class="membericon"/>
+        <img src="img/4.jpg" alt="1" class="membericon"/>
+        <img src="img/2.jpg" alt="1" class="membericon"/>
+        <img src="img/4.jpg" alt="1" class="membericon"/>
+        <img src="img/1.jpg" alt="1" class="membericon"/>
+        <img src="img/2.jpg" alt="1" class="membericon"/>
+        <img src="img/3.jpg" alt="1" class="membericon"/>
+        <img src="img/1.jpg" alt="1" class="membericon"/>
+        <p class="font" style="text-align: right;">See all... (32) ></p>
+      </div>
+        <p class="font loggedin">Logged In As: <span class="username">Lucas Amaral</span></p>
+      </div>
+    </main>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
