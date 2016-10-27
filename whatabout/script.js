@@ -3,12 +3,12 @@ $("#submitgroup").on("click", newGroup);
 $(".group").on("click", openGroup);
 $("#enter_btn").on("click", newCom);
 $(".iconvote").on("click", vote);
-
+$(".filter_label").on("click", filter);
+var loggedin = 1;
 
 function vote(event) {
-  console.log('yes');
   var target = event.target;
-  var comment = target.parentElement.parentElement;
+  var comment = target.parentElement.parentElement; //li
   var comment_ul = comment.parentElement;
   var percentage = $(target).siblings("p");
   var members = comment.parentElement.parentElement.getAttribute("members");
@@ -24,7 +24,6 @@ function vote(event) {
   //HIDE VOTES for USER
   // $(target).siblings("img").hide();
   // $(target).hide();
-
 ///REJECT OR APPROVE
   if (type == "yes") {
     yes += 1;
@@ -36,6 +35,8 @@ function vote(event) {
       comment.setAttribute("status", 1)
       percentage.css("color", "green")
       $(comment).css("background", "#e6ffe6")
+      // sorting(comment_ul,comment);
+      $(comment).prependTo($(comment_ul))
     };
   };
 
@@ -49,12 +50,44 @@ function vote(event) {
       comment.setAttribute("status", -1)
       percentage.css("color", "red")
       $(comment).css("background", "#ffe6e6")
+      $(comment).appendTo($(comment_ul))
     };
   };
 };
 
 
-var loggedin = 1;
+///SORTING NOT WORKING YET
+function sorting(ul,li) {
+var sorted = $("ul li").text.sort();
+console.log($("ul li"));
+};
+
+//   $(ul).sort(sort_li).prependTo(ul);
+//   console.log(ul);
+// };
+// function sort_li(a, b){
+//   // return $(a).attr('status')
+//   if ($(a).attr('status') < $(b).attr('status')) {
+//     return -1
+//   } else if ($(a).attr('status') = $(b).attr('status')) {
+//     return 0
+//   } else if ($(a).attr('status') > $(b).attr('status')) {
+//     return -1
+//   }
+// };
+function filter(event)  {
+    var target = event.target;
+    $(target).toggleClass("crossed")
+    if ($(target).attr("id")=="filter1") {
+      $("[status=1]").toggle();
+    }
+    if ($(target).attr("id")=="filter2") {
+      $("[status=-1]").toggle();
+    }
+    if ($(target).attr("id")=="filter3") {
+      $("[status=0]").toggle();
+    }
+}
 
 function newCom(event) {
   var comment = document.querySelector("#newcomment").value;
@@ -84,8 +117,6 @@ function newCom(event) {
   li.append(c_vote);
   $(".commentul").append(li);
 };
-
-
 
 function login(event) {
   event.preventDefault();

@@ -181,6 +181,7 @@ main {
 	background: linear-gradient(to left, #485563 , #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	border-right: solid 1px black;
 	opacity: 0.9;
+	position: relative;
 }
 
 .grouptitle {
@@ -204,6 +205,7 @@ main {
 	width: 100%;
 	background-color: transparent;
 	outline: none;
+
 
 }
 
@@ -345,6 +347,7 @@ main {
 
 .currentmembers {
 	display: none;
+	margin-bottom: 15px;
 }
 
 .membericon {
@@ -367,4 +370,31 @@ main {
 
 .username {
 	color: red;
+}
+
+//Filters
+.filters2 {
+	padding: 10px;
+	text-align: center;
+}
+
+.filter_label {
+	text-align: center;
+	font-size: 1.5em;
+	display: block;
+}
+
+.exit_btn {
+	width: 50px;
+	height: 50px;
+	filter: invert(100%);
+	position: absolute;
+	bottom: 70px;
+	margin: 0 auto;
+	left: 50%;
+	-webkit-transform: translate(-50%, 0);
+}
+
+.crossed {
+	text-decoration: line-through;
 }
