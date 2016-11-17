@@ -1,0 +1,97 @@
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: helvetica;
+}
+
+body {
+    background: url("../img/stars - Copy.jpg") no-repeat center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+.mynav {
+  background: rgba(0,0,0,0.5);
+  text-align: center;
+  height: 100%;
+}
+
+.mybox {
+  display: flex;
+}
+
+.theme {
+  color: #568C8E;
+  /*color: #417E79;*/
+}
+
+.nav-link {
+  text-align: center;
+  flex: 3;
+}
+
+.call {
+  width: 85%;
+  text-align: center;
+  margin: 5em 1em 0 1em;
+  font-weight: 700;
+  color: white;
+}
+
+/*@media (min-width: 720px) {
+  .call {width: 40%;}
+}*/
+
+/*sm: 420px,
+ md: 720px,
+ lg: 960px*/
+
+
+.nav-link:hover {
+  color: #417E79;
+}
+
+.signup {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+
+.phonetext {
+  background: transparent;
+  color: white;
+}
+
+.mybtn {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: 1em;
+}
+
+.input {
+  background: rgba(0,0,0,0.5);
+}
+
+.input:focus {
+  background: rgba(0,0,0,0.5);
+  border-color: #568C8E;
+}
+
+.signup_btn {
+  background: #568C8E;
+  border-color: #568C8E;
+  color: white;
+}
+
+.signup_btn:hover {
+  background: #417E79;
+  border-color: #417E79;
+}
