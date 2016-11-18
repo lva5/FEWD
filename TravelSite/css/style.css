@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-    background: url("../img/stars - Copy.jpg") no-repeat center fixed;
+    background: url("../img/stars3.jpg") no-repeat center fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -25,7 +25,8 @@ body {
 }
 
 .theme {
-  color: #568C8E;
+  color: white;
+  /*color: #568C8E;*/
   /*color: #417E79;*/
 }
 
@@ -37,19 +38,20 @@ body {
 .call {
   width: 85%;
   text-align: center;
-  margin: 5em 1em 0 1em;
+  margin: 5em 1em 1em 1em;
   font-weight: 700;
   color: white;
 }
 
-/*@media (min-width: 720px) {
-  .call {width: 40%;}
-}*/
+.title {
+  font-size: 60px;
+}
 
-/*sm: 420px,
- md: 720px,
- lg: 960px*/
-
+@media (max-width: 740px) {
+  .title {
+    font-size: 40px;
+  }
+}
 
 .nav-link:hover {
   color: #417E79;
@@ -78,11 +80,15 @@ body {
 
 .input {
   background: rgba(0,0,0,0.5);
+  color: #417E79;
+  /*color: white;*/
 }
 
 .input:focus {
   background: rgba(0,0,0,0.5);
   border-color: #568C8E;
+  color: white;
+  color: #417E79;
 }
 
 .signup_btn {
