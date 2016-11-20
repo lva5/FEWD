@@ -9,8 +9,8 @@ html, body {
 * {
   box-sizing: border-box;
 }
-p {
-  line-height: 33px;
+#summary p {
+  line-height: 30px;
 }
 
 /*nav items*/
@@ -19,7 +19,10 @@ p {
 }
 /*titles*/
 .theme2 {
-  /*color: #456990;*/
+}
+
+.main {
+  padding-top: 1em;
 }
 
 .align {
@@ -78,8 +81,8 @@ p {
 }
 
 #richard {
-  height: 350px;
-  width: 325px;
+  max-height: 325px;
+  max-width: 325px;
   border-radius: 25px;
 }
 
@@ -170,4 +173,8 @@ color: white;
 background: #232526; /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #232526 , #414345); /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.map {
+  border-radius: 25px;
 }
