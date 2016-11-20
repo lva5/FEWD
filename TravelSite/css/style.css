@@ -7,7 +7,8 @@ html, body {
 }
 
 body {
-    background: url("../img/stars3.jpg") no-repeat center fixed;
+    background-color: black;
+    background: url("../img/stars3.jpg") black no-repeat center fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -26,8 +27,6 @@ body {
 
 .theme {
   color: white;
-  /*color: #568C8E;*/
-  /*color: #417E79;*/
 }
 
 .nav-link {
@@ -45,6 +44,7 @@ body {
 
 .title {
   font-size: 60px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 740px) {
@@ -81,7 +81,6 @@ body {
 .input {
   background: rgba(0,0,0,0.5);
   color: #417E79;
-  /*color: white;*/
 }
 
 .input:focus {
