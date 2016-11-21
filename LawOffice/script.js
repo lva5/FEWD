@@ -7,3 +7,7 @@ $('.click_item').click(function(){
     $("[target="+datatarget+"]").show();
     parent.addClass("selected");
 });
+
+// var offset = $('.anchory').offset();
+// var scrollto = offset.top - 55; // minus fixed header height
+// $('html, body').animate({scrollTop:scrollto}, 0);

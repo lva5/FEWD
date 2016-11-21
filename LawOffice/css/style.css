@@ -11,7 +11,17 @@ html, body {
 }
 #summary p {
   line-height: 30px;
+  font-size: 20px;
 }
+
+.main:before {
+   content: "";
+   display: block;
+   height: 85px;
+   margin: -30px 0 0;
+}
+
+
 
 /*nav items*/
 .theme {
@@ -50,13 +60,32 @@ html, body {
   }
 }
 
+/*.imgbg2 {
+  height: 100%;
+  width: 100%;
+  background: url("../img/lawyer.jpg") black no-repeat;
+  background-size: cover;
+  text-align: center;
+}*/
+
+
 .imgbg2 {
   height: 100%;
   width: 100%;
   background: url("../img/lawyer.jpg") black no-repeat;
   background-size: cover;
   text-align: center;
+  border-bottom: 1px solid black;
 }
+
+/*
+.callto {
+  padding: 0;
+  margin-top: 5em;
+  background: white;
+  opacity: 0.5;
+  color: black;
+}*/
 
 .callto {
   padding: 0;
@@ -81,14 +110,16 @@ html, body {
 }
 
 #richard {
-  max-height: 325px;
-  max-width: 325px;
-  border-radius: 25px;
+  max-height: 200px;
+  max-width: 200px;
+  border-radius: 25%;
+  border: 1px solid black;
 }
 
 .cbtn {
-  background: #F45B69;
-  color: black;
+  width: 100%;
+  background: #DCA07E;
+  color: white;
 }
 
 .areas {
@@ -114,9 +145,18 @@ html, body {
 
 }
 
-#summary p {
+
+.award {
+  width: 100px;
+  height: 100px;
 
 }
+
+.award2 {
+  width: 150px;
+  height: 100px;
+}
+
 
 /*PRACTICE AREA*/
 #practice {
