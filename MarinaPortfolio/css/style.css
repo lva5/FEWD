@@ -1,0 +1,114 @@
+html, body, .main {
+  height: 100%;
+  width: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.main {
+  background: url("../anim.gif") black no-repeat;
+  background-size: cover;
+}
+
+.align {text-align: center;}
+
+.author {
+  margin: 10px;
+  color: white;
+  font-style: italic;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+li  {
+  list-style: none;
+}
+
+.mainnav a {
+  font-size: 50px;
+  color: white;
+  text-align: right;
+}
+
+.rightnav {
+background-color : transparent;
+position: fixed;
+top: 0;
+right: 0;
+margin-right: 60px;
+z-index: 9999;
+}
+
+.read {
+
+
+
+  background: #4CA1AF; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #4CA1AF , #C4E0E5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #4CA1AF , #C4E0E5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.articles a {
+  color: black;
+}
+
+.articles li {
+  margin: 5px 0 5px 0;
+  font-size: 30px;
+}
+
+.selectarticle {
+  padding: 10px;
+}
+
+.selectarticle a {
+}
+
+.selectarticle:hover, .selectarticle a:hover {
+  color: blue;
+}
+
+.watch {
+background: #000000; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #000000 , #434343); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #000000 , #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.video {
+  color: white;
+}
+
+.video div {
+  padding-right: 10px;
+}
+
+.listen {
+background: #4CA1AF; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #4CA1AF , #C4E0E5); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #4CA1AF , #C4E0E5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 100%;
+}
+
+.soundicon {
+  height: 100px;
+  width: 100px;
+  border-radius: 25px;
+}
+
+.contact {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #000000 , #434343); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #000000 , #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+
+.contact a {
+ color: white;
+ font-size: 50px;
+}
