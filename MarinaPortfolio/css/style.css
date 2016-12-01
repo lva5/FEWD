@@ -71,8 +71,6 @@ z-index: 9999;
   padding: 10px;
 }
 
-.selectarticle a {
-}
 
 .selectarticle:hover, .selectarticle a:hover {
   color: blue;
