@@ -9,29 +9,39 @@
   <body>
   <header>
     <nav class="navbar mynav w-100 ">
-      <div class="">
+      <div>
         <a class="navbar-brand theme float-md-left" href="#">Richard S. Kolomejec | Immigration Lawyer</a>
         <div class="nav navbar-nav mybox float-md-right hidden-md-down">
-          <a class="nav-item nav-link theme" href="#summary">About</a> <!-- + awards -->
-          <a class="nav-item nav-link theme" href="#practice">Areas of Practice</a>
+          <a class="nav-item nav-link theme" href="#summary">About</a>
+          <a class="nav-item nav-link theme" href="#areas">Areas of Practice</a>
           <a class="nav-item nav-link theme" href="#reviews">Reviews</a>
           <a class="nav-item nav-link theme" href="#contact">Contact</a> <!-- make call to action -->
         </div>
-        <img class="mybtn hidden-lg-up" src="img/list.png" alt="" />
+        <a class="nav-link pull-left hidden-lg-up" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="mybtn hidden-lg-up" src="img/list.png" alt="" />
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#summary">About</a>
+                <a class="dropdown-item" href="#areas">Areas of Practice</a>
+                <a class="dropdown-item" href="#reviews">Reviews</a>
+                <a class="dropdown-item" href="#contact">Contact</a>
+              </div>
+        </div>
       </div>
     </nav>
     <div class="block w-100">
     </div>
   </header>
 
-  <!-- Hook Quote -->
-  <div class="imgbg2">
-    <div class="container">
-      <div class="row">
-        <h1 class="col-sm-7 callto">"Hands down the best immigration lawyer in San Francisco."</h1>
-      </div>
+<!-- Hook Quote -->
+<div class="imgbg2 hidden-sm-down">
+  <div class="container">
+    <div class="row">
+      <h1 class="col-md-7 callto">"Hands down the best immigration lawyer in San Francisco."</h1>
     </div>
   </div>
+</div>
+
 
 <!-- SUMMARY -->
 <a name="around"></a>
@@ -40,52 +50,98 @@
       <h1 class="">San Francisco Immigration Lawyer</h1>
       <hr>
     </div>
-      <div class="row">
-        <div class="col-lg-6 offset-lg-2 mt-1">
-          <div class="row mt-1 ">
-            <img src="img/richard.PNG" alt="[Richard]" class="img-fluid " id="richard"/>
-          </div>
-          <div class="row my-1">
-            <p class="text-justify px-1">
-              For the past 20 years, I have assisted hundreds of individuals and their families obtain legal status in the United States. My practice is devoted 100% to U.S. immigration and nationality law. My rates are very reasonable, payment plans are available, and major credit cards are accepted. My office is conveniently located one-half a block from USCIS (formerly known as INS). I always offer a free telephone consultation. <strong><a href="#">Click for more info</a></strong>
-            </p>
+    <div class="row">
+      <div class="col-lg-6 offset-lg-2 mt-1">
+        <div class="row mt-1 ">
+          <img src="img/richard.PNG" alt="[Richard]" class="img-fluid " id="richard"/>
+        </div>
+        <div class="row my-1">
+          <p class="text-justify px-1">
+            For the past 20 years, I have assisted hundreds of individuals and their families obtain legal status in the United States. My practice is devoted 100% to U.S. immigration and nationality law. My rates are very reasonable, payment plans are available, and major credit cards are accepted. My office is conveniently located one-half a block from USCIS (formerly known as INS). I always offer a free telephone consultation.<br> <strong style="font-weight 700; color: #DCA07E;" onclick="moreInfo()">Click for more info...</strong>
+          </p>
+        </div>
+        <div style="display: none" id="hiddeninfo" class="text-justify pr-1" >
+          <div class="row">
+            <div class="col-md-4 offset-md-2 my-1">
+              <iframe width="360" height="300" src="https://www.youtube.com/embed/9Xy1BrUGRPI"></iframe>
+            </div>
           </div>
           <div class="row">
-            <div class="col-md-4 offset-md-2">
-              <button type="button" class="btn btn-block cbtn my-1">Call Now</button>
-            </div>
-            <div class="col-md-4">
-              <button type="button" class="btn btn-block cbtn my-1">Email Now</button>
-            </div>
+            <h3 class="align">Profile</h3>
+            <ul>
+              <li>Bachelor’s Degree in Finance from Santa Clara University, in Santa Clara, California in 1989</li>
+              <li>Law Degree from McGeorge School of Law (UOP), in Sacramento, California in 1992</li>
+              <li>Admitted to the California State Bar in 1993</li>
+              <li>Member of AILA (American Immigration Lawyers Association) since 1993</li>
+              <li>Member of San Francisco Bar Association’s Low-Fee Immigration Panel since 1999</li>
+            </ul>
+          </div>
+          <div class="row">
+            <h3 class="align">Awards</h3>
+            <ul>
+              <li>Achieved Lead Counsel Rating for Immigration in 2012</li>
+              <li>Nominated as a Best Lawyer in San Francisco in 2009 by LegalForce</li>
+              <li>Member of Presidential Who's Who Among Business and Professional Achievers 2008-2009</li>
+              <li>LegalMatch Lawyer of the Year Award for Immigration 2006</li>
+              <li>LegalMatch Lawyer of the Year Award for Immigration 2005</li>
+            </ul>
+          </div>
+          <div class="row">
+              <h3 class="align">Future Reference</h3>
+              <ul>
+                <li><a href="http://www.dol.gov" target="_blank">Department of Labor</a></li>
+                <li><a href="http://www.state.gov" target="_blank">Department of State</a></li>
+                <li><a href="http://www.irs.gov" target="_blank">Internal Revenue Service</a></li>
+                <li><a href="http://www.uscis.gov" target="_blank">U.S. Citizenship and Immigration Services</a></li>
+                <li><a href="http://travel.state.gov" target="_blank">U.S. Passport Agency</a></li>
+                <li><a href="http://www.travel.state.gov/" target="_blank">Visa Bulletin</a></li>
+              </ul>
+          </div>
+          <div class="row">
+            <h3 class="align">Questionnaires</h3>
+            <ul>
+              <li><a href="pdf/Citizenship_Questionnaire.docx" target="_blank">Citizenship Questionnare</a></li>
+              <li><a href="pdf/Biographical_Data.doc" target="_blank">Biographical Data</li>
+              <li><a href="pdf/CP_Questionnaire.docx" target="_blank">Consular Processing Questionnaire</a></li>
+              <li><a href="pdf/PR_Questionnaire.docx" target="_blank">Permanent Resident Questionnaire</a></li>
+            </ul>
           </div>
         </div>
-
-        <div class="col-lg-2">
+        <div class="row">
+          <div class="col-md-4 offset-md-2">
+            <a href="tel:4154337205" class="calltolink"><button type="button" class="btn btn-block cbtn my-1">Call Now</button></a>
+          </div>
+          <div class="col-md-4">
+            <a href="mailto:rkolomejec@hotmail.com" class="calltolink"><button type="button" class="btn btn-block cbtn my-1">Email Now</button></a>
+          </div>
+        </div>
+      </div>
+        <div class="col-lg-2 mb-1">
             <h4>Distinctions</h4>
           <div class="row mt-2">
-            <img src="img/award2.png" alt="[AWARD]" class="award mx-1" />
+            <a href="http://www.lawqa.com/profile/richard-s-kolomejec-attorney-at-law" target="_blank"><img src="img/award2.png" alt="[AWARD]" class="award mx-1" /></a>
           </div>
           <div class="row mt-2">
             <img src="img/award1.jpg" alt="[AWARD]" class="award mx-1" />
           </div>
           <div class="row mt-2">
-            <img src="img/award3.png" alt="[AWARD]" class="award mx-1" />
+            <a href="http://www.legalmatch.com/content/pressReleases/08-13-07.html" target="_blank"><img src="img/award3.png" alt="[AWARD]" class="award mx-1" /></a>
           </div>
         </div>
     </div>
   </div>
 
-
 <!-- AREAS OF PRACTICE -->
-<div class="anchory"><a name="practice"></a></div>
-<div class="container mt-1 theme2 align w-100 main pt-2" id="practice">
+<a name="areas"></a>
+<div class="anchory"></div>
+<div class="container mt-1 theme2 align w-100 main pt-2 hidden-md-down" id="practice">
   <div class="row">
     <h1 class="align">Areas of Practice</h1>
     <hr>
   </div>
   <div class="row pb-1">
     <div class="col-lg-3 offset-lg-2 mt-1">
-      <div class="row mb-1 areas2">
+      <div class="row mb-1 areas2 selected">
         <h2 class="click_item" id="family">Family-Based Petitions</h2>
       </div>
       <div class="row mb-1 areas2">
@@ -108,7 +164,7 @@
     <div class="col-lg-5 text-justify textarea">
 
       <!-- FAMILY -->
-      <div class="wholetext" style="display: none" target="family">
+      <div class="wholetext" style="display: " target="family">
         <div class="row ml-1">
           <h2 class="align">Family-Based Petitions</h2>
         </div>
@@ -194,8 +250,9 @@
 </div>
 
 <!-- FOR MOBILE (TODO)-->
-<div class="w-100 hidden-sm-up main" id="practice">
-  <div class="container" >
+<div class="anchory"><a name="practice" class=""></a></div>
+<div class="w-100 hidden-lg-up main" id="practice">
+  <div class="container">
     <div class="row">
       <h1 class="align ">Areas of Practice</h1>
       <hr>
@@ -219,30 +276,89 @@
        <div class="card-header" role="tab" id="headingTwo">
          <h5 class="mb-0">
            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-             Collapsible Group Item #2
+             Travel & Re-Entry Permits
            </a>
          </h5>
        </div>
        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
          <div class="card-block">
-           Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+           Travel permits allow an applicant who has filed for permanent residency to return to the U.S. after foreign travel. Travel Permits can be valid for up to 1 year and can be used for multiple entries. There does not need to be an emergency to qualify for this type of travel permit and there is no need to obtain a visa before you return. Please call to see if you qualify for a travel permit. <br><br>
+            Re-entry permits allow a lawful permanent resident (i.e., green card holder) to stay outside the U.S. for up to 2 years without abandoning their green card. Please call to discuss.
          </div>
        </div>
      </div>
      <div class="card">
-       <div class="card-header" role="tab" id="headingThree">
+       <div class="card-header" role="tab" id="headingFour">
          <h5 class="mb-0">
-           <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-             Collapsible Group Item #3
+           <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+             Fiancé Visas
            </a>
          </h5>
        </div>
-       <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+       <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
          <div class="card-block">
-           Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+           Fiancé visas (K-1) are for U.S. citizens who wish to bring their fiancés to the United States to marry. Upon entry, the fiancé is given 90 days to marry. To qualify for a fiancé visa, you must have physically met the person you are marrying within the past two years. Sufficient evidence of the physical meeting is required. Fiancé visas can be issued in cases where the fiancé was denied a tourist visa or student visa. Please call for current time frames.
          </div>
        </div>
      </div>
+     <div class="card">
+       <div class="card-header" role="tab" id="headingFive">
+         <h5 class="mb-0">
+           <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+             Spousal Visas
+           </a>
+         </h5>
+       </div>
+       <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+         <div class="card-block">
+          Spousal visas (K-3) allow a U.S. citizens to bring their spouse to the United States quicker than the traditional immigrant visa route. Once in the United States, the foreign spouse is able to adjust status. A work permit, as well as a social security card and California I.D. or Driver’s License, is available after their entry into the U.S. Please call for current time frames.
+         </div>
+       </div>
+     </div>
+     <div class="card">
+       <div class="card-header" role="tab" id="headingSix">
+         <h5 class="mb-0">
+           <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+             Student Visas
+           </a>
+         </h5>
+       </div>
+       <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix">
+         <div class="card-block">
+          If you are currently in the United States as a visitor and would like to attend an English language school, college or university, you may be eligible to change your status in the United States without having to apply for a student visa abroad. The paperwork is filed through the mail and a decision is made without the need for an interview. Please call to see if you qualify for a student visa.
+         </div>
+       </div>
+     </div>
+     <div class="card">
+       <div class="card-header" role="tab" id="headingSeven">
+         <h5 class="mb-0">
+           <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+             Tourist Visas
+           </a>
+         </h5>
+       </div>
+       <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven">
+         <div class="card-block">
+          If you are currently in the United States on a visitor visa in B-1 or B-2 status, you may be eligible to extend you stay for an additional amount of time (i.e., up to 6 months). After an extension, you may then be eligible to change or adjust your status depending upon your situation. Please call to discuss.
+         </div>
+       </div>
+     </div>
+     <div class="card">
+       <div class="card-header" role="tab" id="headingEight">
+         <h5 class="mb-0">
+           <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+             U.S. Citizenship
+           </a>
+         </h5>
+       </div>
+       <div id="collapseEight" class="collapse" role="tabpanel" aria-labelledby="headingEight">
+         <div class="card-block">
+          For those who have held a green card for at least 5 years (3 years for those married to U.S. citizens), you may be eligible to apply for U.S. citizenship. U.S. Citizenship allows you to travel on a U.S. passport and vote in upcoming elections. Please call to see if you qualify for citizenship.
+         </div>
+       </div>
+     </div>
+
+
    </div>
    </div>
 </div>
@@ -254,15 +370,6 @@
     <h1 class="align">Reviews</h1>
     <hr>
   </div>
-  <!-- <div class="row">
-    <div class="col-lg-8 offset-lg-2">
-      <img src="img/stars.png" alt="stars" class="" />
-      <h3 class="align">150+ Reviews</h3>
-    </div> -->
-    <!-- <div class="col-lg-2 text-justify">
-      <h3>150+ Reviews</h3>
-    </div> -->
-
   <div class="row">
     <div class="col-lg-8 offset-lg-2">
     <blockquote class="blockquote">
@@ -313,24 +420,10 @@
   </div>
   <hr>
 </div>
-
-
-
-  </body>
+</body>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script><link rel="stylesheet" href="css/style.css" media="screen" title="no title">
   <script src="script.js"></script>
 </html>
-
-
-
-<!-- TODO: add call buttons
-attorney profile + awards _ award links
-add yelp stars
-mobile practice
-fix mobile picture
-practice areas selected
-mobile menu
-future reference-->

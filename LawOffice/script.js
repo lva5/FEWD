@@ -11,3 +11,7 @@ $('.click_item').click(function(){
 // var offset = $('.anchory').offset();
 // var scrollto = offset.top - 55; // minus fixed header height
 // $('html, body').animate({scrollTop:scrollto}, 0);
+
+function moreInfo(event) {
+  $("#hiddeninfo").toggle();
+}
